@@ -8,10 +8,10 @@ public class Program {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Enter a folder path: ");
-		String stringDoCaminho = scanner.nextLine();
+		System.out.println("Insira o caminho da pasta: ");
+		String stringDoCaminhoDaPasta = scanner.nextLine();
 		
-		File caminho = new File(stringDoCaminho);
+		File caminho = new File(stringDoCaminhoDaPasta);
 		
 		System.out.println();
 		
@@ -31,7 +31,7 @@ public class Program {
 		
 		System.out.println();
 		
-		boolean sucesso = new File(stringDoCaminho + "\\subpasta").mkdir();
+		boolean sucesso = new File(stringDoCaminhoDaPasta + "\\subpasta").mkdir();
 		System.out.println("Diretório criado com sucesso: " + sucesso);
 		
 		scanner.close();
